@@ -21,6 +21,9 @@ namespace AutomationTest.UiTest
         {
             WebDriver.CloseDriver();
         }
+        /// <summary>
+        /// This test perform a buy in the Demo CS Cart Store, using the Happy Path
+        /// </summary>
         [Test]
         public void BasicNavigation()
         {
