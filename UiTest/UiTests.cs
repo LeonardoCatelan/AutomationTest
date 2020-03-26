@@ -1,5 +1,6 @@
 ﻿using AutomationTest.Core;
 using AutomationTest.UiTest.Pages;
+using FluentAssertions;
 using NUnit.Framework;
 
 
@@ -25,7 +26,8 @@ namespace AutomationTest.UiTest
         {
             startPage.GoToUrl();
             startPage.PerformSearch("T-Shirt");
-
+            startPage.BuyItem();
+            startPage.CheckSuccessMessage().Should().BeTrue("Message not displayed");
         }
     }
 }

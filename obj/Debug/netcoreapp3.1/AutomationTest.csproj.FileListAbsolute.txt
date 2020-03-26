@@ -92,7 +92,6 @@ C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\zh-Ha
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.csproj.CoreCompileInputs.cache
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.AssemblyInfoInputs.cache
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.AssemblyInfo.cs
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.csproj.CopyComplete
@@ -100,3 +99,8 @@ C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\Autom
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.pdb
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.genruntimeconfig.cache
 C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.csprojAssemblyReference.cache
+C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\FluentAssertions.dll
+C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Leo\Desktop\AutomationTest\AutomationTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Leo\Desktop\AutomationTest\AutomationTest\obj\Debug\netcoreapp3.1\AutomationTest.csproj.CoreCompileInputs.cache
