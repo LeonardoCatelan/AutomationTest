@@ -10,31 +10,28 @@ namespace AutomationTest.UiTest.Pages
 {
     public class DemoCsStartPage : Page
     {
+        #region selectors
         IWebElement searchBox;
         IWebElement magnify;
-        IWebElement searchResults;
         IWebElement adidasTShirt;
         IWebElement addToCart;
         IWebElement checkout;
         IWebElement phoneOrdering;
-        IWebElement adress;
-        IWebElement zip;
-        IWebElement email;
-        IWebElement acceptTerms;
-        IWebElement form;
         private By searchboxSelector = By.Id("search_input");
         private By magnifySelector = By.CssSelector("[title='Search']");
         private By resultsSelector = By.ClassName("ty-mainbox-title");
         private By adidasTShirtSelector = By.Id("det_img_11");
         private By addToCartSelector = By.Id("button_cart_11");
         private By checkoutSelector = By.CssSelector(".ty-btn.ty-btn__primary.cm-notification-close");
-        private By phoneOrderingSelector = By.Id("radio_2");
         private By greenMessage = By.CssSelector(".cm-notification-content.notification-content.cm-auto-hide.alert-success");
+        private By phoneOrderingSelector = By.Id("radio_2");
+        //private string phoneOrderingSelector = ".radio_2";
         private string adressSelector = "#litecheckout_s_address";
         private string zipSelector = "#litecheckout_s_zipcode";
         private string emailSelector = "#litecheckout_email";
         private string acceptTermsSelector = ".cm-agreement.checkbox";
         private string formSelector = "#litecheckout_payments_form";
+        #endregion
 
         private void TypeOnElement(string selector, string data)
         {
@@ -72,6 +69,23 @@ namespace AutomationTest.UiTest.Pages
             return element.Displayed;
         }
 
+        private void ClickElement()
+        {
+            string code = "arguments[0].click();";
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript(code, phoneOrdering);
+        }
+
+        public void SetZoom(int number)
+        {
+            string code = "document.body.style.zoom='30%';";
+            phoneOrdering = wait.Until(ExpectedConditions.ElementExists(phoneOrderingSelector));
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript(code);
+        }
+
+
+
         public void BuyItem()
         {
             adidasTShirt = wait.Until(ExpectedConditions.ElementToBeClickable(adidasTShirtSelector));
@@ -80,9 +94,13 @@ namespace AutomationTest.UiTest.Pages
             addToCart.Click();
             checkout = wait.Until(ExpectedConditions.ElementToBeClickable(checkoutSelector));
             checkout.Click();
-            string code = "arguments[0].click();document.body.style.zoom='30%';";
-            phoneOrdering = wait.Until(ExpectedConditions.ElementExists(phoneOrderingSelector));        
-            IJavaScriptExecutor js = (IJavaScriptExecutor)driver; js.ExecuteScript(code, phoneOrdering);
+
+            //string code = "arguments[0].click();document.body.style.zoom='30%';";
+            //phoneOrdering = wait.Until(ExpectedConditions.ElementExists(phoneOrderingSelector)); 
+            //Criar método pro clique e criar um método pro zoom.
+            //IJavaScriptExecutor js = (IJavaScriptExecutor)driver; js.ExecuteScript(code, phoneOrdering);
+            SetZoom(30);
+            ClickElement();
             TypeOnElement(adressSelector, "Avenue Robson");
             TypeOnElement(zipSelector, "12345");
             TypeOnElement(emailSelector, "randomemail@hotmail.com");
