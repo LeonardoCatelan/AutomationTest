@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "R1VL5MG0UsTVlpc7F/2EfPFUUpvOCTUfRO6uu3oCFB+xVAmCa5hp8tNnCN+XCBJGONJ0FHKoktXvBKo+TNLoww==",
+  "dgSpecHash": "qN/v1p6pKvn9dpLE82cshFRx9KsntQF4ALjYodxTKqMl3Z2xF+P+3OkiFVyp8ID7ycj89m/hD0fr0BalwJAXxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Leo\\Desktop\\AutomationTest\\AutomationTest\\AutomationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Leo\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Leo\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\microsoft.codecoverage\\16.2.0\\microsoft.codecoverage.16.2.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\microsoft.net.test.sdk\\16.2.0\\microsoft.net.test.sdk.16.2.0.nupkg.sha512",
@@ -21,6 +22,8 @@
     "C:\\Users\\Leo\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\Leo\\.nuget\\packages\\selenium.chrome.webdriver\\79.0.0\\selenium.chrome.webdriver.79.0.0.nupkg.sha512",
+    "C:\\Users\\Leo\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\Leo\\.nuget\\packages\\system.collections.concurrent\\4.0.12\\system.collections.concurrent.4.0.12.nupkg.sha512",
