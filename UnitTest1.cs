@@ -8,6 +8,7 @@ namespace AutomationTest
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
