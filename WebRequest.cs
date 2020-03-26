@@ -9,7 +9,7 @@ namespace AutomationTest
     {
         public static HttpClient client = new HttpClient();
 
-        public static string GetMethod(string Url)
+        public static string MethodGet(string Url)
         {
             HttpRequestMessage message = new HttpRequestMessage
             {
@@ -20,5 +20,19 @@ namespace AutomationTest
             string body = response.Content.ReadAsStringAsync().Result;
             return body;
         }
+
+        public static bool MethodPost(string Url, string content)
+        {
+            HttpRequestMessage message = new HttpRequestMessage
+            {
+                Method = new HttpMethod("POST"),
+                Content = new StringContent(content),
+                RequestUri = new Uri(Url)
+            };
+            return client.SendAsync(message).Result.IsSuccessStatusCode;
+           // string body = response.Content.ReadAsStringAsync().Result;
+        }
+
+
     }
 }
