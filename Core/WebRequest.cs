@@ -16,13 +16,11 @@ namespace AutomationTest.Core
                 Method = new HttpMethod("GET"),
                 RequestUri = new Uri(Url)
             };
-
             HttpResponseMessage response = client.SendAsync(message).Result;
-            //string body = response.Content.ReadAsStringAsync().Result;
             return response;
         }
 
-        public static bool MethodPost(string Url, string content)
+        public static HttpResponseMessage MethodPost(string Url, string content)
         {
             HttpRequestMessage message = new HttpRequestMessage
             {
@@ -30,10 +28,7 @@ namespace AutomationTest.Core
                 Content = new StringContent(content),
                 RequestUri = new Uri(Url)
             };
-            return client.SendAsync(message).Result.IsSuccessStatusCode;
-            // string body = response.Content.ReadAsStringAsync().Result;
+            return client.SendAsync(message).Result;
         }
-
-
     }
 }

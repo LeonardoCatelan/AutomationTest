@@ -21,10 +21,8 @@ namespace AutomationTest
         {
             string url = "https://postman-echo.com/post";
             string message = "Random Message";
-            bool result = WebRequest.MethodPost(url, message);
-            Assert.IsTrue(result);
-            System.Console.WriteLine($"Result: {result}");
+            HttpResponseMessage result = WebRequest.MethodPost(url, message);
+            Assert.IsTrue(result.IsSuccessStatusCode);
         }
-
     }
 }
