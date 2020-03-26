@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using AutomationTest.Core;
-
+using System.Net.Http;
 
 namespace AutomationTest
 {
@@ -11,9 +11,9 @@ namespace AutomationTest
         public void TestMethodGet()
         {
             string google = "https://api.chucknorris.io/jokes/random";
-            string result = WebRequest.MethodGet(google);
-            Assert.IsNotEmpty(result);
-            System.Console.WriteLine(result);
+            HttpResponseMessage response = WebRequest.MethodGet(google);
+            string body = response.Content.ReadAsStringAsync().Result;
+            Assert.IsNotEmpty(body);
         }
 
         [Test]

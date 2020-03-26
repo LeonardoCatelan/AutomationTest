@@ -9,16 +9,17 @@ namespace AutomationTest.Core
     {
         public static HttpClient client = new HttpClient();
 
-        public static string MethodGet(string Url)
+        public static HttpResponseMessage MethodGet(string Url)
         {
             HttpRequestMessage message = new HttpRequestMessage
             {
                 Method = new HttpMethod("GET"),
                 RequestUri = new Uri(Url)
             };
-            var response = client.SendAsync(message).Result;
-            string body = response.Content.ReadAsStringAsync().Result;
-            return body;
+
+            HttpResponseMessage response = client.SendAsync(message).Result;
+            //string body = response.Content.ReadAsStringAsync().Result;
+            return response;
         }
 
         public static bool MethodPost(string Url, string content)
@@ -30,7 +31,7 @@ namespace AutomationTest.Core
                 RequestUri = new Uri(Url)
             };
             return client.SendAsync(message).Result.IsSuccessStatusCode;
-           // string body = response.Content.ReadAsStringAsync().Result;
+            // string body = response.Content.ReadAsStringAsync().Result;
         }
 
 
