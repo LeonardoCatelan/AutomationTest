@@ -78,7 +78,7 @@ namespace AutomationTest.UiTest.Pages
 
         public void SetZoom(int number)
         {
-            string code = "document.body.style.zoom='30%';";
+            string code = $"document.body.style.zoom='{number}%';";
             phoneOrdering = wait.Until(ExpectedConditions.ElementExists(phoneOrderingSelector));
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
             js.ExecuteScript(code);
